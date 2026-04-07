@@ -1,0 +1,25 @@
+working_dir: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/ckpts/inet_v5_cnn_sumpool_1_v2"
+
+train_and_eval:
+    #training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming_v4/ctr/201907\\{08,09,10,11,12\\}"
+    training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming_v4/ctr/20190722"
+    #training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming_v4/ctr/2019\\{062[6-9],0630,070[1-6]\\}"
+    #training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming_v4/ctr/201906\\{1[6-9],2[0-5]\\}"
+    eval_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming_v4/ctr/20190721"
+    graph_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_cnn_sumpool_1_v2"
+    op_info_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_cnn_sumpool_1_v2_op_list"
+
+verify:
+    verify_graph_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_cnn_sumpool_1_v2_verify"
+    verify_op_info_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_cnn_sumpool_1_v2_verify_op_list"
+    #verify_data_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/verify_data/cnn_exp_9/part-00999-verify.gz"
+    verify_data_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/verify_data/cnn_exp_9/field_verify_data.gz"
+
+export:
+    graph_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_cnn_sumpool_1_v2_serving"
+    serving_sig_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_cnn_sumpool_1_v2_serving_signature_def"
+    done_file_path:  "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/saved_models/inet_v5_cnn_sumpool_1/done_list"
+    saved_model_dir: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/saved_models/inet_v5_cnn_sumpool_1"
+
+daily:
+    daily_train_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming_v4/ctr/{:%Y%m%d}"

@@ -1,0 +1,35 @@
+{
+  "comment": "feature column cross",
+  "features": [
+    {
+      "feature_name": "cross_u_item",
+      "cross_columns": "usernick_d,item_id_d",
+      "value_type": "String",
+      "hash_bucket_size": 20000
+    },
+    {
+      "feature_name": "cross_age",
+      "cross_columns": "userage_d,item_age_d",
+      "value_type": "String",
+      "hash_bucket_size": 1000
+    },
+    {
+      "feature_name": "cross_power",
+      "cross_columns": "userpower_d,item_price_d",
+      "value_type": "String",
+      "hash_bucket_size": 1000
+    },
+    {
+      "feature_name": "cross_sex",
+      "cross_columns": "usersex_d,item_sex_d",
+      "value_type": "String",
+      "hash_bucket_size": 1000
+    },
+    {
+      "feature_name": "context_type_time_st",
+      "cross_columns": "context_type_w,context_time_w,context_st_w",
+      "value_type": "String",
+      "hash_bucket_size": 100
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "request_id" : "xxdds",
+  "trace_enabled_module" : ["fg_module","tensor_inference_module"],
+  "examples" : {
+    "context": {
+      "feature": [{
+        "tag": 948,
+        "bytes_value": ["1234", "5678"]
+      }, {
+        "tag": 950,
+        "bytes_value": ["1"]
+      }
+      ]
+    },
+    "documents": [
+      {"feature": [{"tag": 479, "float_value": [0.32]}, {"tag": 478, "float_value": [0.12]}]},
+      {"feature": [{"tag": 478, "float_value": [0.22]}, {"tag": 479, "float_value": [0.34]}]}
+    ]
+  }
+}

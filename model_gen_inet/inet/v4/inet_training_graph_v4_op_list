@@ -1,0 +1,21 @@
+{
+    "metrics": {
+        "scalar/auc": "inet-base-Metrics/auc/value:0",
+        "scalar/deep_logits_mean": "inet-base-Metrics/Mean_2:0",
+        "scalar/label_mean": "inet-base-Metrics/Mean:0",
+        "scalar/loss": "Loss-op/add:0",
+        "scalar/predict_mean": "inet-base-Metrics/Mean_1:0",
+        "scalar/reg_loss": "Loss-op/Sum:0",
+        "scalar/total_auc": "inet-base-Metrics/auc/update_op:0"
+    },
+    "required_op_list": {
+        "global_step": "global_step:0",
+        "global_step_increment": "global_step_increment:0",
+        "input_init": "MakeIterator",
+        "label": "IteratorGetNext:30",
+        "loss": "Loss-op/add:0",
+        "predictions": "Predictions_Op/Sigmoid:0",
+        "reset_auc": "reset_auc",
+        "train": "OptimizeLoss/control_dependency:0"
+    }
+}

@@ -1,0 +1,49 @@
+{
+  "comment": "main search model",
+  "sources": [
+    {
+      "model_name": "RANK_CTR",
+      "table_name": "hdfs://hq3-data-ns/apps/nothive/warehouse/search/polaris_inet_data/yangyouji/search/inet_polaris_goods/%s/data/inet/csv/ctr/",
+      "da_table_name": "search_offline/lsc_log_wide_fg_ctr_negative",
+      "mc_conf": "jsonfile/mc_pdd_damodel_ctr_v43.json",
+      "num_epochs": "1",
+      "batch_size": "512",
+      "share_user_vec": false,
+      "share_item_vec": true,
+      "prob": "3"
+    },
+    {
+      "model_name": "RANK_CVR",
+      "table_name": "hdfs://hq3-data-ns/apps/nothive/warehouse/search/polaris_inet_data/yangyouji/search/inet_polaris_goods/%s/data/inet/csv/ctr/",
+      "da_table_name": "search_offline/lsc_log_wide_fg_ctr_negative",
+      "mc_conf": "jsonfile/mc_pdd_damodel_ctr_v43.json",
+      "num_epochs": "1",
+      "batch_size": "512",
+      "share_user_vec": false,
+      "share_item_vec": true,
+      "prob": "1"
+    }
+  ],
+  "train_conf": {
+    "fg_conf": "jsonfile/pdd_damodel_conf_v32.json",
+    "initial_learning_rate": 0.025,
+    "num_epochs": 1,
+    "predict": false,
+    "batch_size": 300,
+    "eval_bs": 180,
+    "shard": false,
+    "attention_l2_reg": 1e-6,
+    "dnn_l2_reg": 1e-6,
+    "optimizer": "AdagradDecay",
+    "decay_step": 3000000,
+    "decay_rate": 0.95,
+    "max_checkpoints_to_keep": 8,
+    "save_checkpoint_secs": 3600,
+    "init_op": "constant",
+    "train_parts": ["2020-01-01"],
+    "eval_parts": ["2020-01-01"],
+    "data_format": "raw",
+    "train_op": 2,
+    "save_summaries_steps": 20000
+  }
+}

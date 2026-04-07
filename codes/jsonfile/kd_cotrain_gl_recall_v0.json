@@ -1,0 +1,29 @@
+{
+  "comment": "main search model",
+  "sources": [
+    {
+      "model_name": "Recall_CTR",
+      "table_name": "search_offline/lsc_log_wide_wdlfg_ctr_downsample",
+      "da_table_name": "search_offline/lsc_log_wide_fg_ctr_negative",
+      "lsc_conf": "jsonfile/lsc_conf.json",
+      "mc_conf": "jsonfile/mc_conf_recall_v3_cvr.json",
+      "num_epochs": "1",
+      "batch_size": "512",
+      "share_user_vec": "off",
+      "share_item_vec": "on",
+      "prob": "14"
+    },
+    {
+      "model_name": "Recall_CVR",
+      "table_name": "search_offline/lsc_log_wide_wdlfg_ctr_downsample",
+      "da_table_name": "search_offline/lsc_log_wide_fg_ctr_negative",
+      "lsc_conf": "jsonfile/lsc_conf.json",
+      "mc_conf": "jsonfile/mc_conf_recall_v3_cvr.json",
+      "num_epochs": "1",
+      "batch_size": "512",
+      "share_user_vec": "off",
+      "share_item_vec": "on",
+      "prob": "1"
+    }
+  ]
+}

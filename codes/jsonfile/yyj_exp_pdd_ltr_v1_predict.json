@@ -1,0 +1,36 @@
+{
+  "comment": "main search model",
+  "sources": [
+    {
+      "model_name": "LTR_CTR",
+      "table_name": "hdfs://hq3-data-ns/user/search/rank_data/yangyouji/ltr_ctr_v0/%s/",
+      "lsc_conf": "jsonfile/pdd_ltr_conf_v1.json",
+      "mc_conf": "jsonfile/mc_pdd_ltr_ctr_v1.json",
+      "num_epochs": 1,
+      "batch_size": 512,
+      "share_user_vec": false,
+      "share_item_vec": true,
+      "prob": 14
+    }
+  ],
+  "train_conf": {
+      "num_epochs": 1,
+      "predict": false,
+      "batch_size": 512,
+      "eval_bs": 256,
+      "shard": false,
+      "attention_l2_reg": 1e-6,
+      "dnn_l2_reg": 1e-6,
+      "optimizer": "AdagradDecay",
+      "decay_step": 3000000,
+      "decay_rate": 0.95,
+      "max_checkpoints_to_keep": 8,
+      "init_op": "constant",
+      "train_parts": ["2019-11-6/hr=9/min=20"],
+      "eval_parts": ["2019-11-6/hr=10/min=20"],
+      "data_format": "raw",
+      "save_summaries_steps": 500,
+      "save_checkpoint_secs": 120,
+      "dnn_hidden_units": [64, 128, 64]
+  }
+}

@@ -1,0 +1,215 @@
+[
+    {
+        "column_name": "item_id_d"
+    },
+    {
+        "column_name": "item_cate_id_d"
+    },
+    {
+        "column_name": "item_brand_id_d"
+    },
+    {
+        "column_name": "item_seller_id_d"
+    },
+    {
+        "column_name": "title"
+    },
+    {
+        "column_name": "item_sex_d"
+    },
+    {
+        "column_name": "item_price_d"
+    },
+    {
+        "column_name": "item_age_d"
+    },
+    {
+        "column_name": "itemtag"
+    },
+    {
+        "column_name": "s_nid_pv30_c2c"
+    },
+    {
+        "column_name": "s_nid_ipv30_c2c"
+    },
+    {
+        "column_name": "s_nid_payuv30_c2c"
+    },
+    {
+        "column_name": "s_nid_gmv30_c2c"
+    },
+    {
+        "column_name": "all_nid_ipv30_c2c"
+    },
+    {
+        "column_name": "all_nid_payuv30_c2c"
+    },
+    {
+        "column_name": "s_seller_pv30_c2c"
+    },
+    {
+        "column_name": "s_seller_ipv30_c2c"
+    },
+    {
+        "column_name": "s_seller_payuv30_c2c"
+    },
+    {
+        "column_name": "all_seller_ipv30_c2c"
+    },
+    {
+        "column_name": "all_seller_payuv30_c2c"
+    },
+    {
+        "column_name": "pv_price"
+    },
+    {
+        "column_name": "all_seller_payuv14_c2c"
+    },
+    {
+        "column_name": "all_seller_ipv14_c2c"
+    },
+    {
+        "column_name": "all_seller_payuv7_c2c"
+    },
+    {
+        "column_name": "all_seller_ipv7_c2c"
+    },
+    {
+        "column_name": "s_seller_pv14_c2c"
+    },
+    {
+        "column_name": "s_seller_ipv14_c2c"
+    },
+    {
+        "column_name": "s_seller_payuv14_c2c"
+    },
+    {
+        "column_name": "s_seller_payuv7_c2c"
+    },
+    {
+        "column_name": "s_seller_ipv7_c2c"
+    },
+    {
+        "column_name": "s_seller_pv7_c2c"
+    },
+    {
+        "column_name": "all_nid_ipv14_c2c"
+    },
+    {
+        "column_name": "all_nid_payuv14_c2c"
+    },
+    {
+        "column_name": "all_nid_payuv7_c2c"
+    },
+    {
+        "column_name": "all_nid_ipv7_c2c"
+    },
+    {
+        "column_name": "s_nid_gmv14_c2c"
+    },
+    {
+        "column_name": "s_nid_ipv14_c2c"
+    },
+    {
+        "column_name": "s_nid_pv14_c2c"
+    },
+    {
+        "column_name": "s_nid_payuv14_c2c"
+    },
+    {
+        "column_name": "s_nid_gmv7_c2c"
+    },
+    {
+        "column_name": "s_nid_payuv7_c2c"
+    },
+    {
+        "column_name": "s_nid_ipv7_c2c"
+    },
+    {
+        "column_name": "s_nid_pv7_c2c"
+    },
+    {
+        "column_name": "cart_uv_7"
+    },
+    {
+        "column_name": "collect_uv_7"
+    },
+    {
+        "column_name": "pdb_fetchcoupon_7"
+    },
+    {
+        "column_name": "pdb_comments_7"
+    },
+    {
+        "column_name": "pdb_ck_stay_time_7"
+    },
+    {
+        "column_name": "pdb_barwangwang_7"
+    },
+    {
+        "column_name": "pdb_questionall_7"
+    },
+    {
+        "column_name": "pdb_productparams_7"
+    },
+    {
+        "column_name": "pdb_bigpic_7"
+    },
+    {
+        "column_name": "pdb_customprotection_7"
+    },
+    {
+        "column_name": "pdb_promotion_7"
+    },
+    {
+        "column_name": "pdb_sku_7"
+    },
+    {
+        "column_name": "pdb_share_7"
+    },
+    {
+        "column_name": "cart_uv_30"
+    },
+    {
+        "column_name": "collect_uv_30"
+    },
+    {
+        "column_name": "pdb_fetchcoupon_30"
+    },
+    {
+        "column_name": "pdb_comments_30"
+    },
+    {
+        "column_name": "pdb_ck_stay_time_30"
+    },
+    {
+        "column_name": "pdb_barwangwang_30"
+    },
+    {
+        "column_name": "pdb_questionall_30"
+    },
+    {
+        "column_name": "pdb_productparams_30"
+    },
+    {
+        "column_name": "pdb_bigpic_30"
+    },
+    {
+        "column_name": "pdb_customprotection_30"
+    },
+    {
+        "column_name": "pdb_promotion_30"
+    },
+    {
+        "column_name": "pdb_sku_30"
+    },
+    {
+        "column_name": "pdb_share_30"
+    },
+    {
+        "column_name": "pid_c2c"
+    },
+    {
+        "column_name": "bc_type_c2c"
+    }
+]

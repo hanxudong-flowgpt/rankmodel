@@ -1,0 +1,564 @@
+{
+  "user_columns": [
+    {
+      "column_name": "usernick_d"
+    },
+    {
+      "column_name": "usersex_d"
+    },
+    {
+      "column_name": "userpower_d"
+    },
+    {
+      "column_name": "userage_d"
+    },
+    {
+      "column_name": "week"
+    },
+    {
+      "column_name": "clock"
+    },
+    {
+      "column_name": "usertag"
+    },
+    {
+      "column_name": "id_gender"
+    },
+    {
+      "column_name": "pred_career_type"
+    },
+    {
+      "column_name": "vip_level_name"
+    },
+    {
+      "column_name": "is_foreign"
+    },
+    {
+      "column_name": "pred_has_house"
+    },
+    {
+      "column_name": "pred_attending_college"
+    },
+    {
+      "column_name": "car_series"
+    },
+    {
+      "column_name": "id_age"
+    },
+    {
+      "column_name": "tm_level"
+    },
+    {
+      "column_name": "pred_has_car"
+    },
+    {
+      "column_name": "car_brand_name"
+    },
+    {
+      "column_name": "phone_model"
+    },
+    {
+      "column_name": "pred_baby_age"
+    },
+    {
+      "column_name": "car_line_name"
+    },
+    {
+      "column_name": "pred_baby_gender"
+    },
+    {
+      "column_name": "phone_price_level_prefer"
+    },
+    {
+      "column_name": "pred_life_stage_hasbaby"
+    },
+    {
+      "column_name": "house_build_type"
+    },
+    {
+      "column_name": "pred_car_series"
+    },
+    {
+      "column_name": "is_cap"
+    },
+    {
+      "column_name": "nation_id"
+    },
+    {
+      "column_name": "pred_school"
+    },
+    {
+      "column_name": "county_name"
+    },
+    {
+      "column_name": "pred_education_degree"
+    },
+    {
+      "column_name": "city_level"
+    },
+    {
+      "column_name": "house_xq_name"
+    },
+    {
+      "column_name": "city_name"
+    },
+    {
+      "column_name": "phone_brand"
+    },
+    {
+      "column_name": "id_birthyear"
+    },
+    {
+      "column_name": "prov_name"
+    },
+    {
+      "column_name": "house_age"
+    },
+    {
+      "column_name": "pred_is_undergraduate"
+    },
+    {
+      "column_name": "car_brand"
+    },
+    {
+      "column_name": "pred_life_stage_haschild"
+    },
+    {
+      "column_name": "pred_life_stage_married"
+    },
+    {
+      "column_name": "pred_car_brand"
+    },
+    {
+      "column_name": "pred_gender"
+    },
+    {
+      "column_name": "buyer_star_name"
+    },
+    {
+      "column_name": "property_hourse_level"
+    },
+    {
+      "column_name": "phone_price"
+    },
+    {
+      "column_name": "pay_ord_days_1y"
+    },
+    {
+      "column_name": "luxury_visit_cnt_1y"
+    },
+    {
+      "column_name": "predict_income"
+    },
+    {
+      "column_name": "neibor_house_price"
+    },
+    {
+      "column_name": "house_price"
+    },
+    {
+      "column_name": "neibor_pay_ord_cnt_1y"
+    },
+    {
+      "column_name": "car_max_price"
+    },
+    {
+      "column_name": "pay_ord_days_1m"
+    },
+    {
+      "column_name": "pay_ord_days_3m"
+    },
+    {
+      "column_name": "house_price_country_pt"
+    },
+    {
+      "column_name": "pay_ord_itm_cnt_6m"
+    },
+    {
+      "column_name": "pay_ord_amt_1y"
+    },
+    {
+      "column_name": "pay_ord_itm_qty_1y"
+    },
+    {
+      "column_name": "pay_ord_itm_qty_1m"
+    },
+    {
+      "column_name": "pay_ord_amt_1m"
+    },
+    {
+      "column_name": "pay_ord_itm_qty_3m"
+    },
+    {
+      "column_name": "pay_ord_amt_3m"
+    },
+    {
+      "column_name": "car_sum_price"
+    },
+    {
+      "column_name": "neibor_predict_income"
+    },
+    {
+      "column_name": "house_price_city_pt"
+    },
+    {
+      "column_name": "house_price_country_iv"
+    },
+    {
+      "column_name": "pay_ord_cnt_1y"
+    },
+    {
+      "column_name": "pay_ord_itm_cnt_1m"
+    },
+    {
+      "column_name": "house_price_city_iv"
+    },
+    {
+      "column_name": "pay_ord_itm_cnt_3m"
+    },
+    {
+      "column_name": "neibor_pay_ord_amt_1y"
+    },
+    {
+      "column_name": "luxury_deal_cnt_1y"
+    },
+    {
+      "column_name": "pay_ord_cnt_3m"
+    },
+    {
+      "column_name": "pay_ord_cnt_1m"
+    },
+    {
+      "column_name": "pay_ord_itm_cnt_1y"
+    },
+    {
+      "column_name": "phone_use_month"
+    },
+    {
+      "column_name": "pay_ord_cnt_6m"
+    },
+    {
+      "column_name": "house_green_rate"
+    },
+    {
+      "column_name": "pay_ord_itm_qty_6m"
+    },
+    {
+      "column_name": "pay_ord_amt_6m"
+    },
+    {
+      "column_name": "car_count"
+    },
+    {
+      "column_name": "pay_ord_days_6m"
+    },
+    {
+      "column_name": "luxury_deal_amt_1y"
+    }
+  ],
+  "query_columns": [
+    {
+      "column_name": "queryseg_norm_d"
+    },
+    {
+      "column_name": "mlrscore"
+    },
+    {
+      "column_name": "queryseg_norm"
+    },
+    {
+      "column_name": "qsn_uitem1"
+    },
+    {
+      "column_name": "qsn_pv1"
+    },
+    {
+      "column_name": "qsn_ipv1"
+    },
+    {
+      "column_name": "qsn_pay1"
+    },
+    {
+      "column_name": "qsn_pay_amt1"
+    },
+    {
+      "column_name": "qsn_uitem7"
+    },
+    {
+      "column_name": "qsn_pv7"
+    },
+    {
+      "column_name": "qsn_ipv7"
+    },
+    {
+      "column_name": "qsn_pay7"
+    },
+    {
+      "column_name": "qsn_pay_amt7"
+    },
+    {
+      "column_name": "qsn_uitem14"
+    },
+    {
+      "column_name": "qsn_pv14"
+    },
+    {
+      "column_name": "qsn_ipv14"
+    },
+    {
+      "column_name": "qsn_pay14"
+    },
+    {
+      "column_name": "qsn_pay_amt14"
+    }
+  ],
+  "item_columns": [
+    {
+      "column_name": "item_id_d"
+    },
+    {
+      "column_name": "item_cate_id_d"
+    },
+    {
+      "column_name": "item_brand_id_d"
+    },
+    {
+      "column_name": "item_seller_id_d"
+    },
+    {
+      "column_name": "title"
+    },
+    {
+      "column_name": "item_sex_d"
+    },
+    {
+      "column_name": "item_price_d"
+    },
+    {
+      "column_name": "item_age_d"
+    },
+    {
+      "column_name": "itemtag"
+    },
+    {
+      "column_name": "s_nid_pv30_c2c"
+    },
+    {
+      "column_name": "s_nid_ipv30_c2c"
+    },
+    {
+      "column_name": "s_nid_payuv30_c2c"
+    },
+    {
+      "column_name": "s_nid_gmv30_c2c"
+    },
+    {
+      "column_name": "all_nid_ipv30_c2c"
+    },
+    {
+      "column_name": "all_nid_payuv30_c2c"
+    },
+    {
+      "column_name": "s_seller_pv30_c2c"
+    },
+    {
+      "column_name": "s_seller_ipv30_c2c"
+    },
+    {
+      "column_name": "s_seller_payuv30_c2c"
+    },
+    {
+      "column_name": "all_seller_ipv30_c2c"
+    },
+    {
+      "column_name": "all_seller_payuv30_c2c"
+    },
+    {
+      "column_name": "pv_price"
+    },
+    {
+      "column_name": "all_seller_payuv14_c2c"
+    },
+    {
+      "column_name": "all_seller_ipv14_c2c"
+    },
+    {
+      "column_name": "all_seller_payuv7_c2c"
+    },
+    {
+      "column_name": "all_seller_ipv7_c2c"
+    },
+    {
+      "column_name": "s_seller_pv14_c2c"
+    },
+    {
+      "column_name": "s_seller_ipv14_c2c"
+    },
+    {
+      "column_name": "s_seller_payuv14_c2c"
+    },
+    {
+      "column_name": "s_seller_payuv7_c2c"
+    },
+    {
+      "column_name": "s_seller_ipv7_c2c"
+    },
+    {
+      "column_name": "s_seller_pv7_c2c"
+    },
+    {
+      "column_name": "all_nid_ipv14_c2c"
+    },
+    {
+      "column_name": "all_nid_payuv14_c2c"
+    },
+    {
+      "column_name": "all_nid_payuv7_c2c"
+    },
+    {
+      "column_name": "all_nid_ipv7_c2c"
+    },
+    {
+      "column_name": "s_nid_gmv14_c2c"
+    },
+    {
+      "column_name": "s_nid_ipv14_c2c"
+    },
+    {
+      "column_name": "s_nid_pv14_c2c"
+    },
+    {
+      "column_name": "s_nid_payuv14_c2c"
+    },
+    {
+      "column_name": "s_nid_gmv7_c2c"
+    },
+    {
+      "column_name": "s_nid_payuv7_c2c"
+    },
+    {
+      "column_name": "s_nid_ipv7_c2c"
+    },
+    {
+      "column_name": "s_nid_pv7_c2c"
+    },
+    {
+      "column_name": "pid_c2c"
+    },
+    {
+      "column_name": "bc_type_c2c"
+    }
+  ],
+  "ui_columns": [
+    {
+      "column_name": "ui_page"
+    },
+    {
+      "column_name": "ui_pos"
+    }
+  ],
+  "wide_columns": [
+  ],
+  "sequence_columns": [
+    {
+      "column_name": "item_id_d"
+    },
+    {
+      "column_name": "item_cate_id_d"
+    },
+    {
+      "column_name": "item_brand_id_d"
+    },
+    {
+      "column_name": "item_seller_id_d"
+    },
+    {
+      "column_name": "itemtag"
+    },
+    {
+      "column_name": "title"
+    },
+    {
+      "column_name": "pricerank"
+    },
+    {
+      "column_name": "context_type"
+    },
+    {
+      "column_name": "context_time1"
+    },
+    {
+      "column_name": "context_st1"
+    },
+    {
+      "column_name": "context_index"
+    },
+    {
+      "column_name": "s_nid_pv7_c2c"
+    },
+    {
+      "column_name": "s_nid_ipv7_c2c"
+    },
+    {
+      "column_name": "s_nid_payuv7_c2c"
+    },
+    {
+      "column_name": "s_nid_gmv7_c2c"
+    },
+    {
+      "column_name": "s_nid_pv14_c2c"
+    },
+    {
+      "column_name": "s_nid_ipv14_c2c"
+    },
+    {
+      "column_name": "s_nid_payuv14_c2c"
+    },
+    {
+      "column_name": "s_nid_gmv14_c2c"
+    },
+    {
+      "column_name": "s_nid_pv30_c2c"
+    },
+    {
+      "column_name": "s_nid_ipv30_c2c"
+    },
+    {
+      "column_name": "s_nid_payuv30_c2c"
+    },
+    {
+      "column_name": "s_nid_gmv30_c2c"
+    }
+  ],
+  "seq_context_columns": [
+  ],
+  "seq_length_columns": [
+    {
+      "column_name": "opt_seq_length"
+    }
+  ],
+  "local_key_columns": [
+    {
+      "column_name": "local_key_query"
+    }
+  ],
+  "sequence_multimodal": {
+  },
+  "i2i_sequence_columns": [
+  ],
+  "cross_columns": [
+  ],
+  "query_atten_columns": [
+  ],
+  "user_atten_columns": [
+  ],
+  "seq_context_atten_columns": [
+  ],
+  "queryseq_columns": [
+  ],
+  "title_columns": [
+  ],
+  "personal_columns": [
+  ]
+
+}

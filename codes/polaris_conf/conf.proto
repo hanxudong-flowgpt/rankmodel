@@ -1,0 +1,53 @@
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "com.pdd.pml.msg";
+package pml.msg;
+
+message FeatureConf {
+  message Define {
+    required string name = 1;
+    required string op = 2;
+    optional string params = 3;
+  }
+  message Feature {
+    repeated int32 tag = 1;
+    optional string def = 2;
+    repeated string projector = 3;
+    optional string setup_properties = 4;
+    optional string dicts = 5;
+    optional string default_values = 6;
+  }
+  message Sequence {
+    required string name = 1;
+    repeated Feature feature = 2;
+  }
+  repeated Feature feature = 1;
+  repeated Define def = 2;
+  optional Sequence seq = 3;
+  // Addtional c++ headers for generated code
+  repeated string include = 4;
+}
+
+// Refer in particular to pml.serving.PredictService.Inference
+message PredictService {
+  // output tags
+  repeated int32 tag = 1;
+  // input data, input feature generator will be finalized as the request of pml.serving.PredictSerivce.Inference
+  required string input_feature_generator_name = 2;
+}
+
+message FeatureService {
+  enum Type {
+    UNKNOWN = 0;
+    PREDICT_SERVICE = 1;
+    TF_SERVICE = 2;
+    CONTEXT_ONLY_SERVICE = 3;
+    DOCUMENT_RAW_SERVICE = 4;
+  }
+
+  required Type type = 1;
+  optional string DEPRECATED_naming_service_uri = 2;
+  optional PredictService predict_service = 3;
+  optional string rpc_call_identifier = 4;
+}

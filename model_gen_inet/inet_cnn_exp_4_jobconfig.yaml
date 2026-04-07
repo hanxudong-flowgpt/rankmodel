@@ -1,0 +1,16 @@
+working_dir: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/ckpts/inet_v5_cnn_sumpool_1"
+
+train_and_eval:
+    training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming/ctr/2019\\{062[6-9],0630,070[1-2]\\}"
+    eval_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming/ctr/20190703"
+    graph_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_cnn_sumpool_1"
+    op_info_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_cnn_sumpool_1_op_list"
+
+export:
+    graph_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_cnn_sumpool_1_serving"
+    serving_sig_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_cnn_sumpool_1_serving_signature_def"
+    done_file_path:  "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/saved_models/inet_v5_cnn_sumpool_1/done_list"
+    saved_model_dir: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/saved_models/inet_v5_cnn_sumpool_1"
+
+daily:
+    daily_train_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming/ctr/{:%Y%m%d}"

@@ -1,0 +1,961 @@
+{
+    "comment": "ctr features",
+    "features": [
+        {
+            "feature_tag": "418",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "idx"
+        },
+        {
+            "feature_tag": "11",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100000000,
+            "embedding_dimension": 25,
+            "value_type": "String",
+            "feature_name": "uid"
+        },
+        {
+            "feature_tag": "502",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_often_plat"
+        },
+        {
+            "feature_tag": "427",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 5000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_city"
+        },
+        {
+            "feature_tag": "426",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 2000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_prov"
+        },
+        {
+            "feature_tag": "12",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_gndr"
+        },
+        {
+            "feature_tag": "633",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 2000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_phone_value"
+        },
+        {
+            "feature_tag": "271",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_buy_power"
+        },
+        {
+            "feature_tag": "16",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_age"
+        },
+        {
+            "feature_tag": "634",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_level"
+        },
+        {
+            "feature_tag": "635",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_sv_level"
+        },
+        {
+            "feature_tag": "636",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_bhvr_gndr"
+        },
+        {
+            "feature_tag": "324",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_vst_days_1m"
+        },
+        {
+            "feature_tag": "787",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 3000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "user_mall_fav_c20",
+	    "shared_name": "shared_mall_id"
+        },
+        {
+            "feature_tag": "1117",
+            "feature_type": "sequence",
+            "hash_bucket_size": 120000000,
+            "embedding_dimension": 25,
+            "value_type": "String",
+            "feature_name": "user_session_goods_ranked_list"
+        },
+        {
+            "feature_tag": "1118",
+            "feature_type": "sequence",
+            "hash_bucket_size": 30000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_session_cat3_ranked_list"
+        },
+        {
+            "feature_tag": "1137",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "user_session_brand_ranked_list_c10"
+        },
+        {
+            "feature_tag": "1131",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_session_log_clk_cnt_1m_ranked_list_c10"
+        },
+        {
+            "feature_tag": "1128",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_session_log_impr_cnt_1m_list_c10"
+        },
+        {
+            "feature_tag": "1134",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_session_log_pay_ordr_cnt_1m_ranked_list_c10"
+        },
+        {
+            "feature_tag": "1138",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 3000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "user_session_mall_ranked_list_c10",
+	          "shared_name": "mall_id"
+        },
+        {
+            "_comment": "query fields"
+        },
+        {
+            "feature_tag": "1",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 120000000,
+            "embedding_dimension": 25,
+            "value_type": "String",
+            "feature_name": "query"
+        },
+        {
+            "feature_tag": "540",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 120000000,
+            "embedding_dimension": 25,
+            "value_type": "String",
+            "feature_name": "query_regularized"
+        },
+        {
+            "feature_tag": "250",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 3000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "query_bigram"
+        },
+        {
+            "feature_tag": "248",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "query_len"
+        },
+        {
+            "feature_tag": "249",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 20000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "query_unigram"
+        },
+        {
+            "feature_tag": "542",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 2000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "split_query_ner_goods"
+        },
+        {
+            "feature_tag": "550",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 200000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "split_query_ner_brand"
+        },
+        {
+            "feature_tag": "551",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 2000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "split_query_ner_gender"
+        },
+        {
+            "feature_tag": "549",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "split_query_ner_color"
+        },
+        {
+            "feature_tag": "7",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 120000000,
+            "embedding_dimension": 25,
+            "value_type": "String",
+            "feature_name": "goods_id",
+	    "shared_name": "shared_goods_id"
+        },
+        {
+            "feature_tag": "8",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 30000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "cat_id_3",
+	    "shared_name": "shared_cate3_id"
+        },
+        {
+            "feature_tag": "9",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 3000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "mall_id",
+	    "shared_name": "shared_mall_id"
+        },
+        {
+            "feature_tag": "252",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 3000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "goods_title_bigram"
+        },
+        {
+            "feature_tag": "251",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 20000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "goods_title_word"
+        },
+        {
+            "feature_tag": "677",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_rev_cnt_3m_v"
+        },
+        {
+            "feature_tag": "424",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_goods_pay_ordr_amt_1m"
+        },
+        {
+            "feature_tag": "423",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_goods_pay_ordr_cnt_1m"
+        },
+        {
+            "feature_tag": "678",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_disp_sv"
+        },
+        {
+            "feature_tag": "679",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_disp_crdt"
+        },
+        {
+            "feature_tag": "169",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "brand_id"
+        },
+        {
+            "feature_tag": "593",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 2000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "freq_shp_prvn_id"
+        },
+        {
+            "feature_tag": "592",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 5000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "freq_shp_city_id"
+        },
+        {
+            "_comment": "cross features"
+        },
+        {
+            "feature_tag": "253",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100000000,
+            "embedding_dimension": 25,
+            "value_type": "String",
+            "feature_name": "cross_query_mall_id"
+        },
+        {
+            "feature_tag": "256",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100000000,
+            "embedding_dimension": 25,
+            "value_type": "String",
+            "feature_name": "cross_uid_crs_mall_id"
+        },
+        {
+            "feature_tag": "1522",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100000000,
+            "embedding_dimension": 25,
+            "value_type": "String",
+            "feature_name": "seeds_id_crs_goods_id"
+        },
+        {
+            "feature_tag": "674",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_global_sold_quantity"
+        },
+        {
+            "feature_tag": "675",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_fav_user_cnt"
+        },
+        {
+            "feature_tag": "676",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_fav_cnt_1d"
+        },
+        {
+            "feature_tag": "1628",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "is_ad"
+        },
+        {
+            "feature_tag": "629",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "is_fk_ordr"
+        },
+        {
+            "feature_tag": "395",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "is_gt_1k"
+        },
+        {
+            "feature_tag": "567",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "no_login_days"
+        },
+        {
+            "feature_tag": "597",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "is_edited_2m"
+        },
+        {
+            "feature_tag": "603",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "is_login_1m"
+        },
+        {
+            "feature_tag": "613",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "mall_type_id"
+        },
+        {
+            "feature_tag": "625",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "mall_cate1_id_cnt"
+        },
+        {
+            "feature_tag": "627",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "mall_abnm_price_goods_cnt"
+        },
+        {
+            "feature_tag": "721",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_mall_cfm_ordr_cnt_90d_uf"
+        },
+        {
+            "feature_tag": "558",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "tonality_score"
+        },
+        {
+            "feature_tag": "957",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "tonality_score_new"
+        },
+        {
+            "feature_tag": "703",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_impr_uv_1w"
+        },
+        {
+            "feature_tag": "704",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_impr_uv_2w"
+        },
+        {
+            "feature_tag": "705",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_impr_cnt_2w"
+        },
+        {
+            "feature_tag": "706",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_all_gpv_1w"
+        },
+        {
+            "feature_tag": "707",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_impr_cnt_1w"
+        },
+        {
+            "feature_tag": "708",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_cfm_ordr_amt_1w_uf"
+        },
+        {
+            "feature_tag": "709",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_all_gpv_2w"
+        },
+        {
+            "feature_tag": "710",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_clk_uv_1w"
+        },
+        {
+            "feature_tag": "715",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_rf_ordr_rt_3m"
+        },
+        {
+            "feature_tag": "716",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_clk_uv_2w"
+        },
+        {
+            "feature_tag": "718",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_cfm_ordr_cnt_1m_uf"
+        },
+        {
+            "feature_tag": "719",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_all_guv_1w"
+        },
+        {
+            "feature_tag": "720",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_all_guv_2w"
+        },
+        {
+            "feature_tag": "721",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "log_mall_cfm_ordr_cnt_90d_uf"
+        },
+        {
+            "feature_tag": "657",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_reg_time"
+        },
+        {
+            "feature_tag": "660",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_freq_model"
+        },
+        {
+            "feature_tag": "879",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_srch_type"
+        },
+        {
+            "feature_tag": "680",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "source"
+        },
+        {
+            "feature_tag": "254",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 100000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "cross_query_ner_goods_crs_goods_id"
+        },
+        {
+            "feature_tag": "785",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 3000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "query_goods_match_bigrams"
+        },
+        {
+            "feature_tag": "783",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "query_goods_match_ratio_type1"
+        },
+        {
+            "feature_tag": "784",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "query_goods_match_ratio_type2"
+        },
+        {
+            "_comment": "xulai id_feature fields"
+        },
+        {
+            "feature_tag": "1894",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_action_pv_time_diff"
+        },
+        {
+            "feature_tag": "1907",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 120000000,
+            "embedding_dimension": 25,
+            "value_type": "String",
+            "feature_name": "user_action_fav_goods_ranked_list",
+	    "shared_name": "shared_goods_id"
+        },
+        {
+            "feature_tag": "1908",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 30000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_action_fav_cat3_ranked_list",
+	    "shared_name": "shared_cate3_id"
+        },
+        {
+            "feature_tag": "1909",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "user_action_fav_brand_ranked_list"
+        },
+        {
+            "feature_tag": "1910",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 3000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "user_action_fav_mall_ranked_list",
+	    "shared_name": "shared_mall_id"
+        },
+        {
+            "feature_tag": "1928",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_action_fav_clk_cnt_1m_log2_ranked_list"
+        },
+        {
+            "feature_tag": "1929",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_action_fav_impr_cnt_1m_log2_ranked_list"
+        },
+        {
+            "feature_tag": "1930",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_action_fav_pay_ordr_cnt_1m_log2_ranked_list"
+        },
+        {
+            "feature_tag": "1915",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_action_fav_time_diff"
+        },
+        {
+            "feature_tag": "1917",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 120000000,
+            "embedding_dimension": 25,
+            "value_type": "String",
+            "feature_name": "user_action_buy_goods_ranked_list",
+	    "shared_name": "shared_goods_id"
+        },
+        {
+            "feature_tag": "1918",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 30000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_action_buy_cat3_ranked_list",
+	    "shared_name": "shared_cate3_id"
+        },
+        {
+            "feature_tag": "1919",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "user_action_buy_brand_ranked_list"
+        },
+        {
+            "feature_tag": "1920",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 3000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "user_action_buy_mall_ranked_list",
+	    "sahred_name": "mall_id"
+        },
+        {
+            "feature_tag": "1940",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_action_buy_clk_cnt_1m_log2_ranked_list"
+        },
+        {
+            "feature_tag": "1941",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_action_buy_impr_cnt_1m_list_log2_ranked_list"
+        },
+        {
+            "feature_tag": "1942",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_action_buy_pay_ordr_cnt_1m_list_log2_ranked_list"
+        },
+        {
+            "feature_tag": "1924",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 1000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "user_action_buy_time_diff"
+        },
+        {
+            "feature_tag": "1925",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "count_user_action_pv_goods_id"
+        },
+        {
+            "feature_tag": "1926",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "count_user_action_fav_goods_id"
+        },
+        {
+            "feature_tag": "1927",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000,
+            "embedding_dimension": 5,
+            "value_type": "String",
+            "feature_name": "count_user_action_buy_goods_id"
+        },
+        {
+            "feature_tag": "1963",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 10000000,
+            "embedding_dimension": 10,
+            "value_type": "String",
+            "feature_name": "cross_g_sess_goods_prop_base_value_id"
+        },
+        {
+            "feature_tag": "2623",
+            "feature_type": "id_feature",
+            "hash_bucket_size": 120000000,
+            "embedding_dimension": 25,
+            "value_type": "String",
+            "feature_name": "g_query_clk_goods_id_in_clk_req",
+	          "shared_name": "shared_goods_id"
+        }
+    ],
+    "user_columns": [
+        "query_regularized",
+        "query_bigram",
+        "query_len",
+        "query_unigram",
+        "split_query_ner_goods",
+        "split_query_ner_brand",
+        "split_query_ner_gender",
+        "split_query_ner_color",
+        "uid",
+        "user_often_plat",
+        "user_city",
+        "user_prov",
+        "user_gndr",
+        "user_phone_value",
+        "user_buy_power",
+        "user_age",
+        "user_level",
+        "user_sv_level",
+        "user_bhvr_gndr",
+        "user_vst_days_1m",
+        "user_mall_fav_c20",
+        "user_reg_time",
+        "user_freq_model",
+        "user_srch_type",
+        "user_action_pv_time_diff",
+        "user_action_fav_goods_ranked_list",
+        "user_action_fav_cat3_ranked_list",
+        "user_action_fav_brand_ranked_list",
+        "user_action_fav_mall_ranked_list",
+        "user_action_fav_clk_cnt_1m_log2_ranked_list",
+        "user_action_fav_impr_cnt_1m_log2_ranked_list",
+        "user_action_fav_pay_ordr_cnt_1m_log2_ranked_list",
+        "user_action_fav_time_diff",
+        "user_action_buy_goods_ranked_list",
+        "user_action_buy_cat3_ranked_list",
+        "user_action_buy_brand_ranked_list",
+        "user_action_buy_mall_ranked_list",
+        "user_action_buy_clk_cnt_1m_log2_ranked_list",
+        "user_action_buy_impr_cnt_1m_list_log2_ranked_list",
+        "user_action_buy_pay_ordr_cnt_1m_list_log2_ranked_list",
+        "user_action_buy_time_diff",
+        "count_user_action_pv_goods_id",
+        "count_user_action_fav_goods_id",
+        "count_user_action_buy_goods_id",
+        "user_session_brand_ranked_list_c10",
+        "user_session_log_clk_cnt_1m_ranked_list_c10",
+        "user_session_log_impr_cnt_1m_list_c10",
+        "user_session_log_pay_ordr_cnt_1m_ranked_list_c10",
+        "user_session_mall_ranked_list_c10",
+	"g_query_clk_goods_id_in_clk_req"
+    ],
+    "sequence_columns": [
+        "user_session_goods_ranked_list",
+        "user_session_cat3_ranked_list"
+    ],
+    "item_columns": [
+        "goods_id",
+        "cat_id_3",
+        "mall_id",
+        "goods_title_bigram",
+        "goods_title_word",
+        "log_rev_cnt_3m_v",
+        "log_disp_sv",
+        "log_disp_crdt",
+        "brand_id",
+        "freq_shp_city_id",
+        "freq_shp_prvn_id",
+        "log_goods_pay_ordr_amt_1m",
+        "log_goods_pay_ordr_cnt_1m",
+        "log_fav_user_cnt",
+        "log_fav_cnt_1d",
+        "is_gt_1k",
+        "no_login_days",
+        "is_edited_2m",
+        "is_login_1m",
+        "mall_type_id",
+        "mall_cate1_id_cnt",
+        "mall_abnm_price_goods_cnt",
+        "log_mall_cfm_ordr_cnt_90d_uf",
+        "tonality_score_new",
+        "source",
+        "cross_query_ner_goods_crs_goods_id",
+        "query_goods_match_bigrams",
+        "query_goods_match_ratio_type1",
+        "query_goods_match_ratio_type2"
+    ],
+    "cross_columns": [
+        "cross_uid_crs_mall_id",
+        "cross_query_mall_id",
+        "seeds_id_crs_goods_id",
+        "cross_g_sess_goods_prop_base_value_id"
+    ],
+    "score_columns": [],
+    "ui_columns": []
+}

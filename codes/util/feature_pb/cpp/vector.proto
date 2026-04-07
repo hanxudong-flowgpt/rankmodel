@@ -1,0 +1,10 @@
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "com.pdd.yyj.msg";
+package yyj.msg;
+
+message VectorFeature {
+  required int64 pk = 1;
+  repeated float vec = 2;
+}

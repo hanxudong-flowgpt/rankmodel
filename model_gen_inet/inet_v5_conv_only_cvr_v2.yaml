@@ -1,0 +1,17 @@
+working_dir: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/ckpts/inet_v5_conv_only_cvr_v2"
+
+train_and_eval:
+        #training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming/cvr/2019\\{07*,080[1-2]\\}"
+    training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming/cvr/2019080[3-4]"
+    eval_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming/cvr/20190803"
+    graph_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_conv_only_cvr_v2"
+    op_info_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_conv_only_cvr_v2_op_list"
+
+export:
+    graph_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_conv_only_cvr_v2_serving"
+    serving_sig_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_conv_only_cvr_v2_serving_signature_def"
+    done_file_path:  "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/saved_models/inet_v5_conv_only_cvr_v2/done_list"
+    saved_model_dir: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/saved_models/inet_v5_conv_only_cvr_v2"
+
+daily:
+    daily_train_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming/cvr/{:%Y%m%d}"

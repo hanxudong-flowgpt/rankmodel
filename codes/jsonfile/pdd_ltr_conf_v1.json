@@ -1,0 +1,27 @@
+{
+    "comment": "ltr features",
+    "features": [
+        {"tag": 948, "feature_name": "ltr_query_cat_r_list", "feature_type": "sparse","value_type": "string", "embedding_sparse": {"bucket_size": 12000,"dimension": 16, "combiner": "mean", "name_scope": "8"}},
+        {"tag": 950, "feature_name": "user_tag_gndr", "feature_type": "sparse", "value_type": "string", "embedding_sparse": {"bucket_size": 10,"dimension": 16, "combiner": "mean", "name_scope": "950"}},
+        {"tag": 952, "feature_name": "user_tag_age", "feature_type": "sparse", "value_type": "string", "embedding_sparse": {"bucket_size": 10,"dimension": 16, "combiner": "mean", "name_scope": "952"}},
+        {"tag": 951, "feature_name": "user_tag_buy_power", "feature_type": "sparse", "value_type": "string", "embedding_sparse": {"bucket_size": 10,"dimension": 16, "combiner": "mean", "name_scope": "951"}},
+        {"tag": 949, "feature_name": "user_tag_plat", "feature_type": "sparse", "value_type": "string", "embedding_sparse": {"bucket_size": 10,"dimension": 16, "combiner": "mean", "name_scope": "949"}},
+        {"tag": 153, "feature_name": "ranker_i2i", "feature_type": "dense", "value_type": "double"},
+        {"tag": 145, "feature_name": "ranker_u2i", "feature_type": "dense", "value_type": "double"},
+        {"tag": 478, "feature_name": "inet_ranking_ctr", "feature_type": "dense", "value_type": "double"},
+        {"tag": 479, "feature_name": "inet_ranking_cvr", "feature_type": "dense", "value_type": "double"},
+        {"tag": 738, "feature_name": "inet_mix", "feature_type": "dense", "value_type": "double"},
+        {"tag": 146, "feature_name": "ranker_brand_fav", "feature_type": "dense", "value_type": "double"},
+        {"tag": 147, "feature_name": "ranker_mall_fav", "feature_type": "dense", "value_type": "double"},
+        {"tag": 492, "feature_name": "log_inet_ranking_ctr", "feature_type": "dense", "value_type": "double"},
+        {"tag": 493, "feature_name": "log_inet_ranking_cvr", "feature_type": "dense", "value_type": "double"},
+        {"tag": 241, "feature_name": "log_price", "feature_type": "dense", "value_type": "double"}
+    ],
+    "others": [
+        {"feature_name": "positive", "value_type": "double"},
+        {"feature_name": "uid", "value_type": "string"},
+        {"feature_name": "gid", "value_type": "string"},
+        {"feature_name": "__id", "value_type": "string"},
+        {"feature_name": "bktid", "value_type": "string"}
+    ]
+}

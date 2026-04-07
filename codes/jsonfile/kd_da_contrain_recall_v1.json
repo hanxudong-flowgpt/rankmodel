@@ -1,0 +1,27 @@
+{
+  "comment": "main search model",
+  "sources": [
+    {
+      "model_name": "Recall_CTR",
+      "source_table_name": "lsc_log_wide_wdlfg_ctr",
+      "target_table_name": "lsc_log_wide_fg_ctr_negative",
+      "lsc_conf": "jsonfile/lsc_conf.json",
+      "mc_conf": "jsonfile/mc_conf_recall_v3_ctr.json",
+      "cross": "feature_cross.json",
+      "num_epochs": "1",
+      "batch_size": "512",
+      "prob": "14"
+    },
+    {
+      "model_name": "Recall_CVR",
+      "source_table_name": "lsc_log_wide_wdlfg_cvr",
+      "target_table_name": "lsc_log_wide_fg_ctr_negative",
+      "lsc_conf": "jsonfile/lsc_conf.json",
+      "mc_conf": "jsonfile/mc_conf_recall_v3_cvr.json",
+      "cross": "feature_cross.json",
+      "num_epochs": "1",
+      "batch_size": "512",
+      "prob": "1"
+    }
+  ]
+}

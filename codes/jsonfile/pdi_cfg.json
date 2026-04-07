@@ -1,0 +1,16 @@
+{
+    "comment": "hadoop训练模型",
+    "input": [
+        {
+            "hdfs_format": "hdfs://yiran-data-ns/user/search/rank_data/yaoshi/search/openrank/%s/example/tfrecord/ctr/",
+            "train_mode": "",
+            "comment": "hdfs_format中的%s一般指日期,如'2019-10-01', train_mode分为:{1. 仅仅训练; 2. 训练+预测; 3}",
+            "name": ""
+        }
+    ],
+    "checkpoint_dir": "",
+    "debug_dir": "",
+    "inter_op_parallelism_threads": 64,
+    "intra_op_parallelism_threads": 20
+}
+  

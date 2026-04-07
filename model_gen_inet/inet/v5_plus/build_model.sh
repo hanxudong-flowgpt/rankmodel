@@ -1,0 +1,1 @@
+../build_model.bin -conf_path ./inet_ctr_conf_v5_plus.json -model cnn -pooling conv_only -model_type training -o ./inet_v5_plus_conv_only_v1 -schema v5_plus_schema -batch_size 500 -compression_type GZIP

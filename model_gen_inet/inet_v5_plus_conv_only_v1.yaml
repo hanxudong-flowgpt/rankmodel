@@ -1,0 +1,16 @@
+working_dir: "hdfs://yiran-data-ns/user/search/rank_data/moning/ckpts/inet_v5_plus_conv_only_v1"
+
+train_and_eval:
+    training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming_v4_plus/ctr/2019\\{0819,082[0-1]\\}"
+    eval_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming_v4_plus/ctr/20190819"
+    graph_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/graphs/inet_v5_plus_conv_only_v1"
+    op_info_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/graphs/inet_v5_plus_conv_only_v1_op_list"
+
+export:
+    graph_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/graphs/inet_v5_plus_conv_only_serving_v1"
+    serving_sig_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/graphs/inet_v5_plus_conv_only_serving_v1_signature_def"
+    done_file_path:  "hdfs://yiran-data-ns/user/search/rank_data/moning/saved_models/inet_v5_plus_conv_only_v1/done_list"
+    saved_model_dir: "hdfs://yiran-data-ns/user/search/rank_data/moning/saved_models/inet_v5_plus_conv_only_v1"
+
+daily:
+    daily_train_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming_v4_plus/ctr/{:%Y%m%d}"

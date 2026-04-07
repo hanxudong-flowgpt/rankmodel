@@ -1,0 +1,23 @@
+{
+  "user_columns": [
+    {"column_name":"user_tag_age"},
+    {"column_name":"user_tag_gndr"},
+    {"column_name":"user_tag_plat"},
+    {"column_name":"user_tag_buy_power"}
+  ],
+  "query_columns": [
+    {"column_name":"ltr_query_cat_r_list"}
+  ],
+  "item_columns": [
+    {"column_name":"ranker_i2i"},
+    {"column_name":"ranker_u2i"},
+    {"column_name":"inet_ranking_ctr"},
+    {"column_name":"inet_ranking_cvr"},
+    {"column_name":"inet_mix"},
+    {"column_name":"log_inet_ranking_ctr"},
+    {"column_name":"log_inet_ranking_cvr"},
+    {"column_name":"ranker_brand_fav"},
+    {"column_name":"ranker_mall_fav"},
+    {"column_name":"log_price"}
+  ]
+}

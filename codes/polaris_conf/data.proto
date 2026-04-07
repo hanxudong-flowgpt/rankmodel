@@ -1,0 +1,78 @@
+syntax = "proto2";
+
+option java_multiple_files = true;
+option java_package = "com.pdd.pml.msg";
+option cc_enable_arenas = true;
+package pml.msg;
+
+message Int64Array {
+  repeated int64 value = 1;
+}
+
+message BytesArray {
+  repeated bytes value = 1;// [ctype = STRING_PIECE];
+}
+
+message FloatArray {
+  repeated float value = 1;
+}
+
+message Feature {
+  // NOTE: Anyone who modifies this message MUST make a consistent
+  // modification on feature/types.h.
+  optional int32 tag = 1;
+  repeated int64 int64_value = 2;
+  repeated bytes bytes_value = 3;// [ctype = STRING_PIECE];
+  repeated float float_value = 4;
+  repeated Int64Array int64_array_value = 5;
+  repeated BytesArray bytes_array_value = 6;
+  repeated FloatArray float_array_value = 7;
+}
+
+message Features {
+  repeated Feature feature = 1;
+}
+
+message Stat {
+  optional int64 positive = 1 [default = 0];
+  optional int64 negative = 2 [default = 1];
+  optional int64 count = 3;
+  optional int64 click = 4 [default = 0];
+  optional int64 pay = 5 [default = 0];
+  optional int64 pv = 6 [default = 0];
+}
+
+message Example {
+  optional Features context = 1;
+  optional Features document = 2;
+  optional Stat target = 3;
+  optional string id = 4;
+  optional string sequence_id = 5;
+  optional string sequence_stamp = 6;
+  repeated Sequence sequence = 7;
+}
+
+message ExampleJoin {
+  optional bytes example = 1;
+  message StickFeature {
+    optional int32 tag = 1;
+    optional sfixed64 key = 2;
+    optional Feature feature = 3;
+  }
+  repeated StickFeature stick_feature = 3;
+}
+
+message Sequence {
+  repeated Example example = 1;
+  optional string id = 2;
+}
+
+message ExamplesWithContext {
+  optional Features context = 1;
+  repeated Features documents = 2;
+}
+
+message TensorExamplesWithContext {
+  optional bytes context = 1;
+  repeated bytes documents = 2;
+}

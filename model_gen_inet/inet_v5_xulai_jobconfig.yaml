@@ -1,0 +1,16 @@
+working_dir: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/ckpts/inet_v5_xulai"
+
+train_and_eval:
+    training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming_v4_plus/ctr/20190710"
+    eval_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming_v4_plus/ctr/20190714"
+    graph_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_xulai"
+    op_info_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/inet_v5_xulai_op_list"
+
+export:
+    graph_path: ""
+    serving_sig_path: ""
+    done_file_path:  ""
+    saved_model_dir: ""
+
+daily:
+    daily_train_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming_v4_plus/ctr/{:%Y%m%d}"

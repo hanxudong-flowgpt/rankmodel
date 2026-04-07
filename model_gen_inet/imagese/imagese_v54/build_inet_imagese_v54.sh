@@ -1,0 +1,1 @@
+../../bin/build_model.bin -conf_path inet_imagese_v54.json -model dcn -model_type training -o inet_imagese_v54 -training_data_format csv -schema inet_imagese_v54.schema -batch_size 500 -compression_type GZIP

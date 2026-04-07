@@ -1,0 +1,37 @@
+{
+  "comment": "main search model",
+  "sources": [
+    {
+      "model_name": "RANK_CTR",
+      "table_name": "hdfs://hq3-data-ns/apps/nothive/warehouse/search/polaris_inet_data/xulai/search/inet_polaris_detail_page_sess/%s/data/inet/csv/cvr/",
+      "da_table_name": "search_offline/lsc_log_wide_fg_ctr_negative",
+      "lsc_conf": "jsonfile/pdd_damodel_conf_v32.json",
+      "mc_conf": "jsonfile/mc_pdd_damodel_ctr_v32.json",
+      "num_epochs": "1",
+      "batch_size": "512",
+      "share_user_vec": "off",
+      "share_item_vec": "on",
+      "prob": "14"
+    }
+  ],
+  "train_conf": {
+    "initial_learning_rate": 0.025,
+    "num_epochs": 1,
+    "predict": false,
+    "batch_size": 400,
+    "eval_bs": 256,
+    "shard": false,
+    "attention_l2_reg": 1e-6,
+    "dnn_l2_reg": 1e-6,
+    "optimizer": "AdagradDecay",
+    "decay_step": 3000000,
+    "decay_rate": 0.95,
+    "max_checkpoints_to_keep": 8,
+    "save_checkpoint_secs": 3600,
+    "init_op": "constant",
+    "train_parts": ["2019-12-19"],
+    "eval_parts": ["2019-12-20"],
+    "data_format": "raw",
+    "save_summaries_steps": 20000
+  }
+}

@@ -1,0 +1,10 @@
+working_dir: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/ckpts/graph_train_debug"
+
+train_and_eval:
+    training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming/ctr/20190617"
+    #training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming/ctr/201907\\{1[0-9]\\}"
+    #training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming/ctr/20190720"
+    #training_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming/ctr/2019\\{062[6-9],0630,070[1-9],071[0-9]\\}"
+    eval_path: "hdfs://yiran-data-ns/user/search/rank_data/moning/polaris_streaming/ctr/20190720"
+    graph_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/debug"
+    op_info_path: "hdfs://yiran-data-ns/user/search/rank_data/tieqiu/graphs/debug_op_list"

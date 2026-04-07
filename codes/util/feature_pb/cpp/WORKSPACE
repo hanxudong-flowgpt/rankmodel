@@ -1,0 +1,12 @@
+workspace(name="test")
+
+load("@bazel_tools//tools/build_defs/repo:git.bzl", "git_repository", "new_git_repository")
+
+git_repository(
+  name = "cppcommon",
+  remote= "http://pdd_search_deploy:yKdZeMBeQV1Pexi5hfxz@gitlab.hutaojie.com/pddsearch/cppcommon.git",
+  commit = "HEAD",
+)
+load("@cppcommon//bazel:pdd_build_system.bzl", "alias_as_external_target", "pdd_repository", "pdd_product")
+
+pdd_repository("/pddsearch/thirdparty/protobuf:v3.6.1.3", name = "com_google_protobuf")
