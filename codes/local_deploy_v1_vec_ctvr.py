@@ -1,24 +1,7 @@
 import os,sys,subprocess,time
 import xml.etree.ElementTree as ET
 
-
-def set_xml_value(et, name, value):
-    for x in et.getroot():
-        if x[0].text == name:
-            x[1].text = value
-            return
-    raise ValueError("set xml:%s not found in xml" % name)
-
-
-def get_xml_value(et, name):
-    for x in et.getroot():
-        if x[0].text == name:
-            return x[1].text
-    raise ValueError("get xml:%s not found in xml" % name)
-
-
-src_dir = "./codes/"
-main_script = "./codes/bootstrap/SeqPointCorunVecRecallBS.py"
+main_script = "./bootstrap/SeqPointCorunVecRecallBS.py"
 conf_file = "./xmlfile/tony_pmlimage_12p120w_smallps.xml"
 tony_et = ET.parse(conf_file)
 # day update
@@ -39,11 +22,7 @@ elif mode == "vec":
 
 work_space = 'hdfs://hq3-data-ns/user/search/rank_data/yangyouji/inet_ckpt/mainse/damodel_v512_ctvr_workspace/'
 log_space = 'hdfs://hq3-data-ns/user/search/rank_data/yangyouji/inet_ckpt/mainse/damodel_v512_ctvr_workspace/'
-if mode == 'predict':
-    #work_space += "testpredict/"
-    #log_space += "testpredict/"
-    set_xml_value(tony_et, "tony.worker.instances", "2")
-set_xml_value(tony_et, "tony.tensorboard.log.dir", work_space)
+
 os.system("hadoop fs -rm -r %s" % log_space + "finishedworkers")
 #### submit job
 
@@ -72,6 +51,21 @@ def submit_job(train_parts, timestamp):
                 "-executes=%s"%main_script,
                 "-conf_file=tony.xml",
                 "-python_binary_path=python2"
+              ]
+    debug_dir = work_space + '/logs/'
+    algoparamstr = ""
+    print('start ps0')
+    commond = ["python codes/bootstrap/SeqPointCotrainBootStrap.py",
+                "--platform=local",
+                "--debug_dir=%s" % debug_dir,
+                "--save_dir=%s" % work_space,
+                "--algoparamstr=%s" % algoparamstr,
+                "--mode=%s" % mode,
+                "--job_conf=%s" % job_conf,
+                "--task_index=0",
+                "--job_name=ps",
+                "--worker_hosts=127.0.0.1:2222,127.0.0.1:3333,127.0.0.1:4444",
+                "--ps_hosts=127.0.0.1:1111"
               ]
     logfile=timestamp #time.strftime('%Y.%m.%d-%H.%M.%S',time.localtime(time.time()))
     os.system("nohup "+" ".join(commond) + " > log/log.%s &"%logfile)
